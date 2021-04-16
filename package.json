@@ -1,12 +1,12 @@
 {
-  "name": "vue-bodymap",
+  "name": "vue-body-map",
   "description": "A clickable body map built in Vue",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": false,
   "author": {
     "name": "Nick Davies"
   },
-  "repository": "https://github.com/nickdavies791/vue-bodymap",
+  "repository": "https://github.com/nickdavies791/vue-body-map",
   "keywords": [
     "vue",
     "clickable",
@@ -17,10 +17,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-library": "vue-cli-service build --target lib --name vue-bodymap ./src/install.js",
+    "build-library": "vue-cli-service build --target lib --name vue-body-map ./src/install.js",
     "lint": "vue-cli-service lint"
   },
-  "main": ".dist/vue-bodymap.common.js",
+  "main": ".dist/vue-body-map.common.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"

@@ -1,4 +1,4 @@
-# vue-bodymap
+# vue-body-map
 
 ## Project setup
 ```
