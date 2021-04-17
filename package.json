@@ -1,56 +1,41 @@
 {
   "name": "vue-body-map",
-  "description": "A clickable body map built in Vue",
-  "version": "0.1.1",
-  "private": false,
-  "author": {
-    "name": "Nick Davies"
+  "version": "1.0.0",
+  "description": "An interactive body map component built in Vue",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
   },
-  "repository": "https://github.com/nickdavies791/vue-body-map",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickdavies791/vue-body-map.git"
+  },
   "keywords": [
     "vue",
-    "clickable",
     "interactive",
+    "clickable",
     "body",
     "map"
   ],
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-library": "vue-cli-service build --target lib --name vue-body-map ./src/install.js",
-    "lint": "vue-cli-service lint"
+  "author": "Nick Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickdavies791/vue-body-map/issues"
   },
-  "main": ".dist/vue-body-map.common.js",
+  "homepage": "https://github.com/nickdavies791/vue-body-map#readme",
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "laravel-mix": "^6.0.16",
+    "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12"
+  }
 }

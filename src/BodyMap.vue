@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import Diagram from './assets/diagram.jpg'
+
 export default {
   name: "BodyMap",
 
@@ -90,7 +92,7 @@ export default {
      */
     loadDiagram() {
       let baseImage = new Image();
-      baseImage.src = require('/src/assets/diagram.jpg')
+      baseImage.src = Diagram
 
       baseImage.onload = () => {
         this.canvas.drawImage(baseImage, 0, 0, this.width, this.height);

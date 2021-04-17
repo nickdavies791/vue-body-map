@@ -1,24 +1,36 @@
-# vue-body-map
+# Vue Body Map
 
-## Project setup
-```
-npm install
-```
+Vue Body Map is an interactive body map component built in Vue that you can pull into your projects.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation
 
-### Compiles and minifies for production
-```
-npm run build
+Use node package manager to install.
+
+```bash
+npm install vue-body-map
 ```
 
-### Lints and fixes files
-```
-npm run lint
+## Usage
+
+Pull the package into your existing components.
+
+```vue
+import BodyMap from 'vue-body-map'
+
+export default {
+  components: {
+      BodyMap
+    },
+  }
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Use the component in your template.
+
+```vue
+<template>
+  <body-map colour="red" width="560" height="500" />
+</template>
+```
+
+## License
+[ISC](https://choosealicense.com/licenses/isc/)
